@@ -1,5 +1,6 @@
 :root {
-    --colour-green: #c5f82a;
+    /* Declaring some variables to be able to change the values if needed */
+    --colour-green: #c5f82a; 
     --colour-grey-700: hsl(0, 0%, 20%);
     --colour-grey-800: hsl(0, 0%, 12%);
     --colour-grey-900: hsl(0, 0%, 8%);
@@ -13,9 +14,10 @@
     --line-height: 1.2;
 }
 body {
-    height: 100vh;
+    height: 100vh; /* Making body proportions by only visible area of user */
     width: 100vw;
-    display: flex;
+
+    display: flex; /* Centring article and footer */
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
@@ -23,10 +25,11 @@ body {
 html {
     font-size: var(--main-font-size);
     font-family: var(--font-family);
-    background-color: var(--colour-grey-900);
-    color: #fff;
     text-align: center;
     line-height: var(--line-height);
+
+    background-color: var(--colour-grey-900);
+    color: #fff;
 }
 main {
     box-sizing: border-box;
@@ -54,7 +57,7 @@ h1 {
 
     margin-bottom: 0.5rem;
 }
-.section-heading p {
+header p {
     color: var(--colour-green);
     font-weight: 600;
     margin-bottom: 2rem;
@@ -65,31 +68,33 @@ h1 {
     row-gap: var(--paragraph-font-size);
 }
 .nav-list section {
-    background-color: var(--colour-grey-700);
+    border-radius: 0.5rem;
     height: 2.875rem;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    border-radius: 0.5rem;
     font-weight: var(--font-weight-bold);
+    background-color: var(--colour-grey-700);
 
     transition: all 500ms ease-in-out 0s;
 }
 .description-text {
     margin-bottom: 1.5rem;
 }
-.nav-list section:hover {
+.nav-list section:hover { /* Making link container able to response */
     background-color: var(--colour-green);
     color: var(--colour-grey-900);
+
     cursor: pointer;
 }
 footer a {
     color: var(--colour-green);
+
     transition: all 500ms ease-in-out 0s;
 }
-footer a:hover {
+footer a:hover { /* Hover state for links in footer for user understanding, that it's responsive element */
     color: #c99b86;
 }
 nav a {
@@ -97,7 +102,7 @@ nav a {
     color: inherit;
 }
 
-@media (prefers-reduced-motion: reduce) {
+@media (prefers-reduced-motion: reduce) { /* Making different transitions for people, who prefers reduced motion */
   footer a {
     transition: all 3s linear 0s;
   }
