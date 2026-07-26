@@ -1,5 +1,5 @@
 :root {
-    --colour-green: hsl(75, 94%, 57%);
+    --colour-green: #c5f82a;
     --colour-grey-700: hsl(0, 0%, 20%);
     --colour-grey-800: hsl(0, 0%, 12%);
     --colour-grey-900: hsl(0, 0%, 8%);
@@ -17,7 +17,7 @@ body {
     width: 100vw;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
 }
 html {
@@ -73,7 +73,35 @@ h1 {
     justify-content: center;
 
     border-radius: 0.5rem;
+    font-weight: var(--font-weight-bold);
+
+    transition: all 500ms ease-in-out 0s;
 }
 .description-text {
     margin-bottom: 1.5rem;
+}
+.section-list section:hover {
+    background-color: var(--colour-green);
+    color: var(--colour-grey-900);
+    cursor: pointer;
+}
+footer a {
+    color: var(--colour-green);
+    transition: all 500ms ease-in-out 0s;
+}
+footer a:hover {
+    color: #c99b86;
+}
+section a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  footer a {
+    transition: all 3s linear 0s;
+  }
+  .section-list section {
+    transition: all 4s linear 0s;
+  }
 }
