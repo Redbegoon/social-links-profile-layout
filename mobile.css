@@ -1,0 +1,21 @@
+@media only screen and (max-width: 420px) {
+    :root {
+        --line-height: 1.5;
+    }
+    main {
+        width: 18rem;
+        padding: 1.5rem;
+    }
+    p {
+        font-size: 1.125rem;
+    }
+    footer {
+        margin-left: 10vw;
+        margin-right: 10vw;
+
+        line-height: var(--line-height);
+    }
+    .nav-list section {
+        height: 4rem;
+    }
+}

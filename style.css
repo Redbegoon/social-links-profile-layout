@@ -59,12 +59,12 @@ h1 {
     font-weight: 600;
     margin-bottom: 2rem;
 }
-.section-list {
+.nav-list {
     display: flex;
     flex-direction: column;
     row-gap: var(--paragraph-font-size);
 }
-.section-list section {
+.nav-list section {
     background-color: var(--colour-grey-700);
     height: 2.875rem;
 
@@ -80,7 +80,7 @@ h1 {
 .description-text {
     margin-bottom: 1.5rem;
 }
-.section-list section:hover {
+.nav-list section:hover {
     background-color: var(--colour-green);
     color: var(--colour-grey-900);
     cursor: pointer;
@@ -92,7 +92,7 @@ footer a {
 footer a:hover {
     color: #c99b86;
 }
-section a {
+nav a {
     text-decoration: none;
     color: inherit;
 }
