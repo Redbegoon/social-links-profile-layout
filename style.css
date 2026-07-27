@@ -39,35 +39,17 @@ main {
 
     background-color: var(--colour-grey-800);
 }
-img {
-    width: 5.5rem;
-    margin-bottom: 2rem;
-
-    border-radius: 50%;
-}
-p {
-    font-size: var(--paragraph-font-size);
-}
-footer {
-    margin: 0;
-}
-h1 {
-    font-size: 1.5rem;
-    font-weight: 600;
-
-    margin-bottom: 0.5rem;
-}
 header p {
     color: var(--colour-green);
     font-weight: 600;
     margin-bottom: 2rem;
 }
-.nav-list {
+nav {
     display: flex;
     flex-direction: column;
     row-gap: var(--paragraph-font-size);
 }
-.nav-list section {
+nav section {
     border-radius: 0.5rem;
     height: 2.875rem;
 
@@ -80,14 +62,18 @@ header p {
 
     transition: all 500ms ease-in-out 0s;
 }
-.description-text {
-    margin-bottom: 1.5rem;
-}
-.nav-list section:hover { /* Making link container able to response */
+nav section:hover { /* Making link container able to response */
     background-color: var(--colour-green);
     color: var(--colour-grey-900);
 
     cursor: pointer;
+}
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
+footer {
+    margin: 0;
 }
 footer a {
     color: var(--colour-green);
@@ -97,9 +83,23 @@ footer a {
 footer a:hover { /* Hover state for links in footer for user understanding, that it's responsive element */
     color: #c99b86;
 }
-nav a {
-    text-decoration: none;
-    color: inherit;
+img {
+    width: 5.5rem;
+    margin-bottom: 2rem;
+
+    border-radius: 50%;
+}
+p {
+    font-size: var(--paragraph-font-size);
+}
+h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    margin-bottom: 0.5rem;
+}
+.description-text {
+    margin-bottom: 1.5rem;
 }
 
 @media (prefers-reduced-motion: reduce) { /* Making different transitions for people, who prefers reduced motion */
